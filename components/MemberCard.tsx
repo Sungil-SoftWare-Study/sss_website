@@ -107,7 +107,7 @@ export function MemberCard({ member }: MemberCardProps) {
 				</CardHeader>
 				<CardContent>
 					<p className="text-center mb-4 line-clamp-4">
-						"&nbsp;{member.description}&nbsp;"
+						&quot;&nbsp;{member.description}&nbsp;&quot;
 					</p>
 					<div className="grid grid-cols-2 gap-4">
 						<div>

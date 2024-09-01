@@ -91,7 +91,7 @@ export default async function MemberDetail({
 					</CardHeader>
 					<CardContent>
 						<p className="text-center mb-4">
-							"&nbsp;{member.description}&nbsp;"
+							&quot;&nbsp;{member.description}&nbsp;&quot;
 						</p>
 						<div className="grid grid-cols-2 gap-6">
 							<div className="flex flex-col items-center">
