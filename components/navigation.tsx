@@ -92,7 +92,7 @@ export default function Navigation() {
 	return (
 		<nav className="fixed top-0 left-0 right-0 z-10 bg-opacity-100 transition-all duration-300 ease-in-out">
 			<div
-				className={`flex flex-wrap items-center justify-between mx-auto px-8 bg-background-900 bg-opacity-45 overflow-hidden transition-all duration-300 ease-in-out ${
+				className={`flex flex-wrap items-center justify-between mx-auto px-8 bg-background-900 bg-opacity-75 overflow-hidden transition-all duration-300 ease-in-out ${
 					isScrolled ? "h-16" : "h-32"
 				}`}>
 				<Link href={"/"} className="font-semibold text-xl lg:text-xl">
@@ -101,7 +101,7 @@ export default function Navigation() {
 				<div className="mobile-menu block md:hidden">
 					<button
 						onClick={() => setNavbarOpen(!navbarOpen)}
-						className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:border-white hover:text-white">
+						className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-300 hover:border-white hover:text-white">
 						{navbarOpen ? (
 							<XMarkIcon className="h-5 w-5" />
 						) : (
@@ -112,7 +112,7 @@ export default function Navigation() {
 				<div className="hidden md:flex md:items-center md:w-auto" id="navbar">
 					<ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 items-center">
 						{navLinks.map((link, index) => (
-							<li key={index}>
+							<li key={index} className="text-white hover:text-primary-400">
 								<NavLink
 									href={link.path}
 									title={link.title}
