@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import MemberCard from "@/components/MemberCard";
 
 export const metadata: Metadata = {
-	title: "역대 멤버",
+	title: "Members",
 };
 
 export default async function Members(): Promise<JSX.Element> {
