@@ -106,7 +106,7 @@ export function MemberCard({ member }: MemberCardProps) {
 					</div>
 				</CardHeader>
 				<CardContent>
-					<p className="text-center mb-4 line-clamp-2">
+					<p className="text-center mb-4 line-clamp-4">
 						"&nbsp;{member.description}&nbsp;"
 					</p>
 					<div className="grid grid-cols-2 gap-4">
@@ -161,7 +161,7 @@ export function MemberCard({ member }: MemberCardProps) {
 							</a>
 						)}
 					</div>
-					<div>
+					{/* <div>
 						<h4 className="font-semibold">Records</h4>
 						<ul className="list-disc list-inside">
 							{member.records.slice(0, 2).map((record, index) => (
@@ -171,7 +171,7 @@ export function MemberCard({ member }: MemberCardProps) {
 							))}
 							{member.records.length > 2 && <li>...</li>}
 						</ul>
-					</div>
+					</div> */}
 				</CardFooter>
 			</Card>
 		</Link>

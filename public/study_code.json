@@ -5,8 +5,101 @@
 		"description" : "SSS 2021",
 		"study-code" : [
 			{
-				"code" : "study-code1",
-				"name" : "study1"
+				"code" : "",
+				"name" : ""
+			}
+		]
+	},
+	{
+		"generation" : "2",
+		"date" : "2022",
+		"description" : "SSS 2022",
+		"study-code" : [
+			{
+				"code" : "SSS2022GAME",
+				"name" : "게임개발 스터디"
+			},
+			{
+				"code" : "SSS2022APP",
+				"name" : "앱개발 스터디"
+			},
+			{
+				"code" : "SSS2022WEB",
+				"name" : "웹개발 스터디"
+			},
+			{
+				"code" : "SSS2022SEC",
+				"name" : "보안 스터디"
+			},
+			{
+				"code" : "SSS2022ALG",
+				"name" : "알고리즘 스터디"
+			}
+		]
+	},
+	{
+		"generation" : "3",
+		"date" : "2023",
+		"description" : "SSS 2023",
+		"study-code" : [
+			{
+				"code" : "SSS2023GAME",
+				"name" : "게임개발 스터디"
+			},
+			{
+				"code" : "SSS2023APP",
+				"name" : "앱개발 스터디"
+			},
+			{
+				"code" : "SSS2023WEB",
+				"name" : "웹개발 스터디"
+			},
+			{
+				"code" : "SSS2023SEC",
+				"name" : "보안 스터디"
+			},
+			{
+				"code" : "SSS2023ALG",
+				"name" : "알고리즘 스터디"
+			},
+			{
+				"code" : "SSS2023AI",
+				"name" : "인공지능 스터디"
+			}
+		]
+	},
+	{
+		"generation" : "4",
+		"date" : "2024",
+		"description" : "SSS 2024",
+		"study-code" : [
+			{
+				"code" : "SSS2024GAME",
+				"name" : "게임개발 스터디"
+			},
+			{
+				"code" : "SSS2024APP",
+				"name" : "앱개발 스터디"
+			},
+			{
+				"code" : "SSS2024WEB",
+				"name" : "웹개발 스터디"
+			},
+			{
+				"code" : "SSS2024SEC",
+				"name" : "보안 스터디"
+			},
+			{
+				"code" : "SSS2024ALG",
+				"name" : "알고리즘 스터디"
+			},
+			{
+				"code" : "SSS2024AI",
+				"name" : "인공지능 스터디"
+			},
+			{
+				"code" : "SSS2024PB",
+				"name" : "프로그래밍 기초 스터디"
 			}
 		]
 	}

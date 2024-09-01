@@ -5,7 +5,7 @@
 		"members" : [
 			{
 				"code" : "202101",
-				"name" : "Jeseok Lee",
+				"name" : "Kim Tehan",
 				"role" : {
 					"leader" : true,
 					"mentor" : true,
@@ -22,36 +22,7 @@
 
 				},
 				"socials" : {
-					"github" : "https://github.com/itsjay83",
-					"ig" : "url",
-					"lnkin" : "url"
-				},
-				"records" : [
-					"record1",
-					"record2",
-					"record3"
-				]
-			},
-			{
-				"code" : "202102",
-				"name" : "name",
-				"role" : {
-					"leader" : true,
-					"mentor" : true,
-					"mentee" : false
-				},
-				"description" : "",
-				"studys" : {
-					"mentor" : [
-						"study-code1", "study-code2"
-					],
-					"mentee" : [
-						"study-code3", "study-code3"
-					]
-
-				},
-				"socials" : {
-					"github" : "url",
+					"github" : "https://github.com/Gaeduck-0908",
 					"ig" : "url",
 					"lnkin" : "url"
 				},
@@ -61,6 +32,43 @@
 					"record3"
 				]
 			}
+			
+		]
+
+	},
+	{
+		"generation" : "2",
+		"description" : "SSS 2022",
+		"members" : [
+			{
+				"code" : "202201",
+				"name" : "Jeseok Lee",
+				"role" : {
+					"leader" : true,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "이거 만들다 죽을뻔함",
+				"studys" : {
+					"mentor" : [
+						"SSS2024AI", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2022GAME", "SSS2023APP"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/itsjay83",
+					"ig" : "url",
+					"lnkin" : "url"
+				},
+				"records" : [
+					"2024 교육부 장관상",
+					"2023 교내 프로그래밍 경진대회 은상"
+				]
+			}
+			
 		]
 
 	}
