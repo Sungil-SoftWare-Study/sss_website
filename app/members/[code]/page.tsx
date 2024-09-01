@@ -63,7 +63,12 @@ export default async function MemberDetail({
 					<ArrowLeft className="mr-2" size={20} />
 					돌아가기
 				</Link>
-				<Card>
+				<Card className="relative overflow-hidden">
+					{member.role.leader && (
+						<div className="absolute top-3 -right-16 w-52 h-14 rotate-45 bg-gradient-to-r from-orange-500 to-red-400 flex items-center justify-center border border-yellow-400">
+							<span className="font-extrabold">Leader</span>
+						</div>
+					)}
 					<CardHeader className="flex flex-col items-center space-y-4">
 						<Image
 							src={avatarUrl || "https://via.placeholder.com/128"}
