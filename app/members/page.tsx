@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchMembers } from "@/lib/api";
+import { fetchMembers } from "@/lib/api/api";
 import { Generation, Member } from "@/types/member";
 import { Metadata } from "next";
 import MemberCard from "@/components/MemberCard";

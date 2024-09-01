@@ -9,7 +9,7 @@ import {
 	CardFooter,
 } from "@/components/ui/card";
 import { Github, Instagram, Linkedin, ArrowLeft } from "lucide-react";
-import { getMemberByCode } from "@/lib/api";
+import { getMemberByCode } from "@/lib/api/api";
 import { getStudyInfo } from "@/lib/serverActions";
 import { Member } from "@/types/member";
 
