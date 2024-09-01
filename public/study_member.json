@@ -48,7 +48,7 @@
 					"mentor" : true,
 					"mentee" : true
 				},
-				"description" : "이거 만들다 죽을뻔함",
+				"description" : "이거 배포하다 죽을뻔함",
 				"studys" : {
 					"mentor" : [
 						"SSS2024AI", "SSS2024PB"
