@@ -5,7 +5,7 @@ const nextConfig = {
 	images: {
 		domains: ["avatars.githubusercontent.com", "via.placeholder.com"],
 	},
-	output: "export",
+	// output: "export",
 	async headers() {
 		return [
 			{
