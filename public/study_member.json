@@ -5,7 +5,7 @@
 		"members" : [
 			{
 				"code" : "202101",
-				"name" : "Kim Tehan",
+				"name" : "Tehan Kim",
 				"role" : {
 					"leader" : true,
 					"mentor" : true,
@@ -32,9 +32,7 @@
 					"record3"
 				]
 			}
-			
 		]
-
 	},
 	{
 		"generation" : "2",
@@ -68,8 +66,38 @@
 					"2023 교내 프로그래밍 경진대회 은상"
 				]
 			}
-			
 		]
-
+	},
+	{
+		"generation" : "3",
+		"description" : "SSS 2023",
+		"members" : [
+			{
+				"code" : "202301",
+				"name" : "Wonjun Lee",
+				"role" : {
+					"leader" : false,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "게임 개발 단장",
+				"studys" : {
+					"mentor" : [
+						"SSS2024GAME", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2023ALG"
+					]
+				},
+				"socials" : {
+					"github" : "https://github.com/wonjun17234",
+					"ig" : "url",
+					"lnkin" : "url"
+				},
+				"records" : [
+					
+				]
+			}
+		]
 	}
 ]

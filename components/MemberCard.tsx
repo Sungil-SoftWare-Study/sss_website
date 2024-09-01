@@ -17,6 +17,28 @@ interface MemberCardProps {
 	member: Member;
 }
 
+async function getGitHubAvatar(
+	githubUrl: string | undefined
+): Promise<string | null> {
+	if (!githubUrl) return null;
+	const username = githubUrl.split("/").pop();
+	const token = process.env.GITHUB_TOKEN;
+
+	try {
+		const response = await fetch(`https://api.github.com/users/${username}`, {
+			headers: {
+				Authorization: `token ${token}`,
+			},
+		});
+		if (!response.ok) throw new Error("Failed to fetch GitHub avatar");
+		const data = await response.json();
+		return data.avatar_url;
+	} catch (error) {
+		console.error("Error fetching GitHub avatar:", error);
+		return null;
+	}
+}
+
 export function MemberCard({ member }: MemberCardProps) {
 	const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
 	const [mentorStudies, setMentorStudies] = useState<string[]>(
@@ -31,18 +53,8 @@ export function MemberCard({ member }: MemberCardProps) {
 		const fetchData = async () => {
 			// Fetch avatar
 			if (member.socials.github) {
-				const username = member.socials.github.split("/").pop();
-				try {
-					const response = await fetch(
-						`https://api.github.com/users/${username}`
-					);
-					if (response.ok) {
-						const data = await response.json();
-						setAvatarUrl(data.avatar_url);
-					}
-				} catch (error) {
-					console.error("Error fetching GitHub avatar:", error);
-				}
+				const avatarUrl = await getGitHubAvatar(member.socials.github);
+				setAvatarUrl(avatarUrl);
 			}
 
 			// Fetch study info
@@ -166,17 +178,6 @@ export function MemberCard({ member }: MemberCardProps) {
 							</a>
 						)}
 					</div>
-					{/* <div>
-						<h4 className="font-semibold">Records</h4>
-						<ul className="list-disc list-inside">
-							{member.records.slice(0, 2).map((record, index) => (
-								<li key={index} className="truncate">
-									{record}
-								</li>
-							))}
-							{member.records.length > 2 && <li>...</li>}
-						</ul>
-					</div> */}
 				</CardFooter>
 			</Card>
 		</Link>

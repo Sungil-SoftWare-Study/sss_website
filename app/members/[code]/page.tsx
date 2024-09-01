@@ -26,8 +26,14 @@ async function getGitHubAvatar(
 ): Promise<string | null> {
 	if (!githubUrl) return null;
 	const username = githubUrl.split("/").pop();
+	const token = process.env.GITHUB_TOKEN;
+
 	try {
-		const response = await fetch(`https://api.github.com/users/${username}`);
+		const response = await fetch(`https://api.github.com/users/${username}`, {
+			headers: {
+				Authorization: `token ${token}`,
+			},
+		});
 		if (!response.ok) throw new Error("Failed to fetch GitHub avatar");
 		const data = await response.json();
 		return data.avatar_url;
