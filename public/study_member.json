@@ -46,7 +46,7 @@
 					"mentor" : true,
 					"mentee" : true
 				},
-				"description" : "이거 배포하다 죽을뻔함",
+				"description" : "Use Vercel not github.io",
 				"studys" : {
 					"mentor" : [
 						"SSS2024AI", "SSS2024PB"
