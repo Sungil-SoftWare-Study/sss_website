@@ -1,0 +1,13 @@
+[
+	{
+		"generation" : "1",
+		"date" : "2021",
+		"description" : "SSS 2021",
+		"study-code" : [
+			{
+				"code" : "study-code1",
+				"name" : "study1"
+			}
+		]
+	}
+]

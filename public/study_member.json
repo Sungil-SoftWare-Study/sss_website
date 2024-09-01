@@ -1,0 +1,67 @@
+[
+	{
+		"generation" : "1",
+		"description" : "SSS 2021",
+		"members" : [
+			{
+				"code" : "202101",
+				"name" : "Jeseok Lee",
+				"role" : {
+					"leader" : true,
+					"mentor" : true,
+					"mentee" : false
+				},
+				"description" : "test",
+				"studys" : {
+					"mentor" : [
+						"study-code1", "study-code2"
+					],
+					"mentee" : [
+						"study-code3", "study-code3"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/itsjay83",
+					"ig" : "url",
+					"lnkin" : "url"
+				},
+				"records" : [
+					"record1",
+					"record2",
+					"record3"
+				]
+			},
+			{
+				"code" : "202102",
+				"name" : "name",
+				"role" : {
+					"leader" : true,
+					"mentor" : true,
+					"mentee" : false
+				},
+				"description" : "",
+				"studys" : {
+					"mentor" : [
+						"study-code1", "study-code2"
+					],
+					"mentee" : [
+						"study-code3", "study-code3"
+					]
+
+				},
+				"socials" : {
+					"github" : "url",
+					"ig" : "url",
+					"lnkin" : "url"
+				},
+				"records" : [
+					"record1",
+					"record2",
+					"record3"
+				]
+			}
+		]
+
+	}
+]
