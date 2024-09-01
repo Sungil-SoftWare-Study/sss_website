@@ -18,7 +18,7 @@ interface MemberDetailProps {
 }
 
 export const metadata = {
-	title: "멤버 상세 정보",
+	title: "Member Detail",
 };
 
 async function getGitHubAvatar(

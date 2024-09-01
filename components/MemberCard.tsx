@@ -22,7 +22,7 @@ async function getGitHubAvatar(
 ): Promise<string | null> {
 	if (!githubUrl) return null;
 	const username = githubUrl.split("/").pop();
-	const token = process.env.GITHUB_TOKEN;
+	const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 	try {
 		const response = await fetch(`https://api.github.com/users/${username}`, {
@@ -51,23 +51,27 @@ export function MemberCard({ member }: MemberCardProps) {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			// Fetch avatar
-			if (member.socials.github) {
-				const avatarUrl = await getGitHubAvatar(member.socials.github);
-				setAvatarUrl(avatarUrl);
+			try {
+				// Fetch avatar
+				if (member.socials.github) {
+					const avatarUrl = await getGitHubAvatar(member.socials.github);
+					setAvatarUrl(avatarUrl);
+				}
+
+				// Fetch study info
+				const mentorPromises = member.studys.mentor.map(getStudyInfo);
+				const menteePromises = member.studys.mentee.map(getStudyInfo);
+				const [mentorResults, menteeResults] = await Promise.all([
+					Promise.all(mentorPromises),
+					Promise.all(menteePromises),
+				]);
+				setMentorStudies(mentorResults);
+				setMenteeStudies(menteeResults);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			} finally {
+				setIsLoaded(true);
 			}
-
-			// Fetch study info
-			const mentorPromises = member.studys.mentor.map(getStudyInfo);
-			const menteePromises = member.studys.mentee.map(getStudyInfo);
-			const [mentorResults, menteeResults] = await Promise.all([
-				Promise.all(mentorPromises),
-				Promise.all(menteePromises),
-			]);
-			setMentorStudies(mentorResults);
-			setMenteeStudies(menteeResults);
-
-			setIsLoaded(true);
 		};
 
 		fetchData();
@@ -99,7 +103,7 @@ export function MemberCard({ member }: MemberCardProps) {
 				)}
 				<CardHeader className="flex flex-row items-center space-x-4">
 					<Image
-						src={avatarUrl || "https://via.placeholder.com/64"}
+						src={avatarUrl || "/default-avatar.png"}
 						alt={member.name}
 						width={64}
 						height={64}
