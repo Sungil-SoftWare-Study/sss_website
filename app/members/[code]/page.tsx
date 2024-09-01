@@ -9,7 +9,7 @@ import {
 	CardFooter,
 } from "@/components/ui/card";
 import { Github, Instagram, Linkedin, ArrowLeft } from "lucide-react";
-import { getMemberByCode } from "@/lib/api";
+import { getMemberByCode, fetchMembers } from "@/lib/api";
 import { getStudyInfo } from "@/lib/serverActions";
 import { Member } from "@/types/member";
 
@@ -20,6 +20,15 @@ interface MemberDetailProps {
 export const metadata = {
 	title: "멤버 상세 정보",
 };
+
+export async function generateStaticParams() {
+	const generations = await fetchMembers();
+	return generations.flatMap((generation) =>
+		generation.members.map((member) => ({
+			code: member.code,
+		}))
+	);
+}
 
 async function getGitHubAvatar(
 	githubUrl: string | undefined
@@ -91,7 +100,7 @@ export default async function MemberDetail({
 					</CardHeader>
 					<CardContent>
 						<p className="text-center mb-4">
-							&quot;&nbsp;{member.description}&nbsp;&quot;
+							"&nbsp;{member.description}&nbsp;"
 						</p>
 						<div className="grid grid-cols-2 gap-6">
 							<div className="flex flex-col items-center">
