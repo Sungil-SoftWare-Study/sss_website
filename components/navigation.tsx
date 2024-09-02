@@ -96,7 +96,7 @@ export default function Navigation() {
 					isScrolled ? "h-16" : "h-32"
 				}`}>
 				<Link href={"/"} className="font-semibold text-xl lg:text-xl">
-					Sungil Software Study
+					Sung-il Software Study
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					<button
