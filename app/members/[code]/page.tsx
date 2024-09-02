@@ -46,9 +46,9 @@ async function getGitHubAvatar(
 export default async function MemberDetail({
 	params,
 }: MemberDetailProps): Promise<JSX.Element> {
-	const member: Member | undefined = await getMemberByCode(params.code);
+	const { member, generation } = await getMemberByCode(params.code);
 
-	if (!member) {
+	if (!member || !generation) {
 		notFound();
 	}
 
@@ -104,10 +104,19 @@ export default async function MemberDetail({
 						<p className="text-center mb-4">
 							&quot;&nbsp;{member.description}&nbsp;&quot;
 						</p>
-						<p className="text-center mb-4">
-							졸업 연도 {member.graduation} (
-							{member.isRunning && <span>{"ISHERE"}</span>})
-						</p>
+						<div className="text-center mb-2">
+							{/* <h2 className="text-xl font-semibold">Information</h2> */}
+							<p className="text-center mb-4">졸업 연도: {member.graduation}</p>
+							<p className="text-center mb-4">
+								활동 기간: {generation.year}({generation.generation}
+								기)
+								{member.isRunning ? (
+									<span>&nbsp;&#126;&nbsp;현재</span>
+								) : (
+									<span>&nbsp;&#126;&nbsp;{member.graduation}&nbsp;졸업</span>
+								)}
+							</p>
+						</div>
 						<div className="grid grid-cols-2 gap-6">
 							<div className="flex flex-col items-center">
 								<h2 className="text-xl font-semibold mb-2">멘토링 스터디</h2>

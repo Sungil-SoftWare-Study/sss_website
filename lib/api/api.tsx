@@ -17,11 +17,11 @@ export async function fetchMembers(): Promise<Generation[]> {
 
 export async function getMemberByCode(
 	code: string
-): Promise<Member | undefined> {
+): Promise<{ member: Member | undefined; generation: Generation | undefined }> {
 	const generations = await fetchMembers();
 	for (const generation of generations) {
 		const member = generation.members.find((m) => m.code === code);
-		if (member) return member;
+		if (member) return { member, generation };
 	}
-	return undefined;
+	return { member: undefined, generation: undefined };
 }
