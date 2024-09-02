@@ -69,6 +69,37 @@
 					"2022 삼성 주니어 SW 아카데미 참여 ",
 					"2022 Intel A.I for Youth Program 참여"
 				]
+			},
+			{
+				"code" : "202202",
+				"name" : "손은규",
+				"role" : {
+					"leader" : false,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "",
+				"studys" : {
+					"mentor" : [
+						"SSS2024GAME", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2022GAME", "SSS2023ALG"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/kkwabaegi",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"2024 A.I Youth Challenge 교육부 장관상",
+					"2023 지방 기능 경기 대회 게임 개발 출전",
+					"2022 삼성 주니어 SW 아카데미 참여 ",
+					"2022 Intel A.I for Youth Program 참여"
+
+				]
 			}
 		]
 	},

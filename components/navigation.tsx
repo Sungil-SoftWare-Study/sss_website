@@ -101,7 +101,7 @@ export default function Navigation() {
 				<div className="mobile-menu block md:hidden">
 					<button
 						onClick={() => setNavbarOpen(!navbarOpen)}
-						className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-300 hover:border-white hover:text-white">
+						className="flex items-center px-3 py-2 border rounded border-slate-200 text-primary-50 hover:border-white hover:text-white">
 						{navbarOpen ? (
 							<XMarkIcon className="h-5 w-5" />
 						) : (
@@ -112,7 +112,9 @@ export default function Navigation() {
 				<div className="hidden md:flex md:items-center md:w-auto" id="navbar">
 					<ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 items-center">
 						{navLinks.map((link, index) => (
-							<li key={index} className="text-white hover:text-primary-400">
+							<li
+								key={index}
+								className="text-primary-50 hover:text-primary-400">
 								<NavLink
 									href={link.path}
 									title={link.title}
