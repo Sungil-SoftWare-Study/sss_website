@@ -1,0 +1,81 @@
+[
+	{
+		"generation" : "1",
+		"year" : 2021,
+		"description" : "SSS 2021",
+		"members" : [
+			{
+				"code" : "code",
+				"name" : "name",
+				"role" : {
+					"leader" : true,
+					"mentor" : true,
+					"mentee" : false
+				},
+				"graduation" : 2024,
+				"isRunning" : true,
+				"description" : "test",
+				"studys" : {
+					"mentor" : [
+						"study-code1", "study-code2"
+					],
+					"mentee" : [
+						"study-code3", "study-code3"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/Gaeduck-0908",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"record1",
+					"record2",
+					"record3"
+				]
+			}
+		]
+	},
+	{
+		"generation" : "2",
+		"year" : 2022,
+		"description" : "SSS 2022",
+		"members" : [
+			{
+				"code" : "202201",
+				"name" : "Jeseok Lee",
+				"graduation" : 2025,
+				"isRunning" : true,
+				"role" : {
+					"leader" : true,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "Use Vercel not github.io",
+				"studys" : {
+					"mentor" : [
+						"SSS2024AI", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2022GAME", "SSS2023APP"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/itsjay83",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"2024 A.I Youth Challenge 교육부 장관상",
+					"2024 가짜 연구소 8기 러너",
+					"2023 교내 프로그래밍 경진대회 은상",
+					"2023 지방 기능 경기 대회 게임 개발 출전",
+					"2022 삼성 주니어 SW 아카데미 참여 ",
+					"2022 Intel A.I for Youth Program 참여"
+				]
+			}
+		]
+	}
+]
