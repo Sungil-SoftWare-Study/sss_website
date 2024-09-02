@@ -2,7 +2,9 @@ export default function Introduction() {
 	return (
 		<section className="text-center px-4 max-w-4xl">
 			<h1 className="text-primary-50 mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
-				Sung-il Software Study
+				<span className="text-primary-500">S</span>ung-il{" "}
+				<span className="text-primary-500">S</span>oftware{" "}
+				<span className="text-primary-500">S</span>tudy
 			</h1>
 			<p className="text-primary-300 mb-4 text-lg sm:text-xl md:text-2xl lg:text-3xl">
 				Developing, Studying, Dreaming, Growing, and Advancing as a group of
