@@ -4,8 +4,10 @@
 
 :root {
 	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+	/* --background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255; */
+	--background-start-rgb: 4, 9, 22;
+	--background-end-rgb: 4, 9, 22;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +17,10 @@
 		/* --background-start-rgb: 233, 238, 251; */
 		--background-end-rgb: 4, 9, 22;
 	}
+}
+
+* {
+	color: #e9eefb;
 }
 
 body {

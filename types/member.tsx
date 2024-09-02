@@ -19,6 +19,8 @@ export interface Member {
 	code: string;
 	name: string;
 	role: MemberRole;
+	graduation: number;
+	isRunning: boolean;
 	description: string;
 	studys: StudyInfo;
 	socials: Social;
@@ -27,6 +29,7 @@ export interface Member {
 
 export interface Generation {
 	generation: string;
+	year: number;	
 	description: string;
 	members: Member[];
 }

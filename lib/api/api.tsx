@@ -12,7 +12,7 @@ async function readJsonFile(filePath: string) {
 }
 
 export async function fetchMembers(): Promise<Generation[]> {
-	return readJsonFile("study_member.json");
+	return readJsonFile("study_members.json");
 }
 
 export async function getMemberByCode(

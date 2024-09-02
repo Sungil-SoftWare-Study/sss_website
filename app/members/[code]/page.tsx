@@ -11,7 +11,7 @@ import {
 import { Github, Instagram, Linkedin, ArrowLeft } from "lucide-react";
 import { getMemberByCode } from "@/lib/api/api";
 import { getStudyInfo } from "@/lib/serverActions";
-import { Member } from "@/types/member";
+import { Member, Generation } from "@/types/member";
 
 interface MemberDetailProps {
 	params: { code: string };
@@ -103,6 +103,10 @@ export default async function MemberDetail({
 					<CardContent>
 						<p className="text-center mb-4">
 							&quot;&nbsp;{member.description}&nbsp;&quot;
+						</p>
+						<p className="text-center mb-4">
+							졸업 연도 {member.graduation} (
+							{member.isRunning && <span>{"ISHERE"}</span>})
 						</p>
 						<div className="grid grid-cols-2 gap-6">
 							<div className="flex flex-col items-center">
