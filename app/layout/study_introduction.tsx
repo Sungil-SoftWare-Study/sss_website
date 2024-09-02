@@ -19,8 +19,8 @@ export default function Sintroduction() {
 							className="rounded-xl"
 						/>
 					</div>
-					<div className="flex flex-col items-center p-10">
-						<p className="text-sm lg:text-xl">
+					<div className="flex flex-col items-start p-10">
+						<p className="text-sm lg:text-xl mb-8">
 							<span className="text-2xl lg:text-4xl">
 								Sung-il Software Study
 							</span>
@@ -31,6 +31,10 @@ export default function Sintroduction() {
 							로 이루어지며 서로 자유롭게 의견을 나누고 <br />
 							대회 준비, 프로젝트 개발 등 활동을 진행하며 실력과 경험을 늘리고
 							있습니다.
+						</p>
+						<p className="text-slate-300 text-sx lg:text-sx mb-8">
+							Sung-il Software Study는 2021년 초기 단장 &apos;김태한&apos;에
+							의해 설립되어
 						</p>
 					</div>
 				</div>
