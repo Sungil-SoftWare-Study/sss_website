@@ -14,7 +14,7 @@ const footerMenuData: MenuItem[] = [
 	{
 		menu: "About Us",
 		"sub-menu": [
-			{ label: "About Us", link: "/About Us" },
+			{ label: "About Us", link: "/#about" },
 			{ label: "Contact Us", link: "/Contact US" },
 		],
 	},

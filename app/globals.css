@@ -8,6 +8,7 @@
 	--background-end-rgb: 255, 255, 255; */
 	--background-start-rgb: 4, 9, 22;
 	--background-end-rgb: 40, 90, 255;
+	--background-line-rgb: 125, 154, 232;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +17,8 @@
 		--background-start-rgb: 4, 9, 22;
 		/* --background-start-rgb: 233, 238, 251; */
 		/* --background-end-rgb: 4, 9, 22; */
-		--background-end-rgb: 40, 90, 255;
+		--background-end-rgb: 50, 100, 255;
+		--background-line-rgb: 125, 154, 232;
 	}
 }
 
@@ -29,12 +31,14 @@ body {
 	background: linear-gradient(
 			to bottom,
 			transparent,
-			rgb(var(--background-end-rgb)),
-			rgb(var(--background-start-rgb))
+			rgb(var(--background-start-rgb)) 0%,
+			/* rgb(var(--background-end-rgb)) 48%, */ /* rgb(240, 168, 179) 50%, */
+				rgb(var(--background-end-rgb)) 52%,
+			rgb(var(--background-start-rgb)) 100%
 		)
 		rgb(var(--background-start-rgb));
-	/* min-height: 100vh;
-	margin: 0; */
+	min-height: 100vh;
+	margin: 0;
 }
 
 .nav {
