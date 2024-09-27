@@ -1,5 +1,7 @@
 import React from "react";
 import {
+	GithubIcon,
+	Github,
 	Facebook,
 	Twitter,
 	Instagram,
@@ -24,6 +26,8 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
 }) => {
 	const getIcon = (platform: string): LucideIcon => {
 		switch (platform.toLowerCase()) {
+			case "github":
+				return GithubIcon;
 			case "facebook":
 				return Facebook;
 			case "twitter":
@@ -32,10 +36,10 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
 				return Instagram;
 			case "linkedin":
 				return Linkedin;
-			case "Youtube":
+			case "youtube":
 				return Youtube;
 			default:
-				return Youtube; // Default icon, you can change this
+				return Github; // Default icon, you can change this
 		}
 	};
 
@@ -64,6 +68,10 @@ const SocialMediaLinks: React.FC = () => {
 		{
 			platform: "Youtube",
 			url: "https://www.youtube.com/@SungilSoftwareStudy",
+		},
+		{
+			platform: "Github",
+			url: "https://github.com/Sungil-SoftWare-Study",
 		},
 	];
 

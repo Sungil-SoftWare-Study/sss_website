@@ -7,7 +7,13 @@ export default function Sintroduction() {
 			className="flex-2 flex flex-col items-center justify-around"
 			id="about">
 			{/* <div className="text-primary-50 text-2xl">스터디 소개</div> */}
-			<div className="mt-40">
+			<div className="mt-40 bg-black bg-opacity-50 rounded-lg ">
+				<div className="flex justify-center items-center">
+					<h1 className="text-3xl lg:text-4xl p-10 font-extrabold">
+						What is Sung-il Software Study?
+					</h1>
+				</div>
+				<div className="border-t border-primary-100 ml-10 mr-10 "></div>
 				{/* <div className="grid grid-cols-1 xl:gird-cols-1 gap-4 mb-8"> */}
 				<div className="grid grid-cols-1 xl:grid-cols-2 ">
 					<div className="flex flex-col items-center p-10">
@@ -41,6 +47,7 @@ export default function Sintroduction() {
 						</p>
 					</div>
 				</div>
+				<div className="grid grid-cols-1 xl:grid-cols-2"></div>
 			</div>
 		</section>
 	);

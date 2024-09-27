@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface Link {
 	path: string;
-	title: string;
+	label: string;
 }
 
 interface MenuOverlayProps {
@@ -28,7 +28,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
 					<li key={index} className="py-2 text-white hover:text-primary-400">
 						<NavLink
 							href={link.path}
-							title={link.title}
+							label={link.label}
 							onClick={(e) => onLinkClick(e, link.path)}
 						/>
 					</li>

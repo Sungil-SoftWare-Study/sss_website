@@ -65,8 +65,8 @@ export default async function MemberDetail({
 			<div className="container mx-auto max-w-2xl">
 				<Link
 					href="/members"
-					className="flex items-center mb-6 text-primary-500 hover:text-primary-600">
-					<ArrowLeft className="mr-2" size={20} />
+					className="flex items-center mb-6 text-primary-400 hover:text-primary-500 hover:animate-pulse">
+					<ArrowLeft className="mr-2 hoer " size={20} />
 					돌아가기
 				</Link>
 				<Card className="relative overflow-hidden">
@@ -91,7 +91,7 @@ export default async function MemberDetail({
 										key={role}
 										className={`text-sm px-2 py-1 rounded ${
 											member.role[role]
-												? "bg-primary-500 text-white"
+												? "bg-primary-400 text-white"
 												: "bg-gray-200 text-gray-600"
 										}`}>
 										{role}

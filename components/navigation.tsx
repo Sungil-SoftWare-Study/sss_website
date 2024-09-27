@@ -8,19 +8,19 @@ import MenuOverlay from "./menuOver";
 
 const navLinks = [
 	{
-		title: "홈으로",
+		label: "홈으로",
 		path: "/#home",
 	},
 	{
-		title: "스터디 소개",
+		label: "스터디 소개",
 		path: "/#about",
 	},
 	{
-		title: "스터디 활동",
+		label: "스터디 활동",
 		path: "/#activity",
 	},
 	{
-		title: "역대 멤버",
+		label: "역대 멤버",
 		path: "/members",
 	},
 ];
@@ -117,7 +117,7 @@ export default function Navigation() {
 								className="text-primary-50 hover:text-primary-400">
 								<NavLink
 									href={link.path}
-									title={link.title}
+									label={link.label}
 									onClick={(e) => handleLinkClick(e, link.path)}
 								/>
 							</li>

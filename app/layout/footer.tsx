@@ -1,5 +1,5 @@
 "use client";
-import FooterMenu from "./footer_menu";
+import FooterMenu from "../../components/footer_menu";
 import SocialMediaLinks from "./links";
 
 export default function Footer() {

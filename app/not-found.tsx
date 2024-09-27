@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: {
+		template: "SSS | %s",
+		default: "404 not Found HASU",
+	},
+	description: "Sungil Software Study",
+};
+
 export default function NotFound() {
 	return (
 		<section
