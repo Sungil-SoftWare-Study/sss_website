@@ -124,7 +124,7 @@ export default function Navigation() {
 						))}
 						<li>
 							<Link
-								href="/apply"
+								href="/recruitment"
 								className={`bg-primary-500 hover:bg-primary-600 text-white font-bold rounded transition-all duration-300 ${
 									isScrolled ? "text-sm py-2 px-4" : "text-xl py-4 px-8"
 								}`}>
