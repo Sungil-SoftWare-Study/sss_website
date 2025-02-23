@@ -1,3 +1,4 @@
+//member>page.tsx
 import React, { Suspense } from "react";
 import { fetchMembers } from "@/lib/api/api";
 import { Generation, Member } from "@/types/member";

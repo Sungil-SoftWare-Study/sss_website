@@ -6,7 +6,7 @@
 		"members" : [
 			{
 				"code" : "code",
-				"name" : "name",
+				"name" : "Teahan Kim",
 				"role" : {
 					"leader" : true,
 					"mentor" : true,
@@ -108,6 +108,35 @@
 					"2022 삼성 주니어 SW 아카데미 참여 ",
 					"2022 Intel A.I for Youth Program 참여"
 				]
+			},
+			{
+				"code" : "202203",
+				"name" : "김지호",
+				"graduation" : 2025,
+				"isRunning" : false,
+				"role" : {
+					"leader" : false,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "",
+				"studys" : {
+					"mentor" : [
+						"SSS2024ALG", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2022GAME", "SSS2023ALG"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/lelo52",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"2024 AI슈퍼컴퓨터 청소년 캠프"
+				]
 			}
 		]
 	},
@@ -145,7 +174,68 @@
 					"2022 교내 프로그래밍 경진대회 장려상(4등)",
 					"2024 지방 기능 경기 대회 게임 개발 출전"
 				]
+			},
+      {
+				"code" : "202302",
+				"name" : "최 환",
+				"graduation" : 2025,
+				"isRunning" : false,
+				"role" : {
+					"leader" : false,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "집가고 싶다",
+				"studys" : {
+					"mentor" : [
+						"SSS2024GAME", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2023ALG"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/hwan06",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"2022 교내 프로그래밍 경진대회 장려상(4등)",
+					"2024 지방 기능 경기 대회 게임 개발 출전"
+				]
+			},
+      {
+				"code" : "202303",
+				"name" : "정은교",
+				"graduation" : 2025,
+				"isRunning" : false,
+				"role" : {
+					"leader" : false,
+					"mentor" : true,
+					"mentee" : true
+				},
+				"description" : "Hearin is mine",
+				"studys" : {
+					"mentor" : [
+						"SSS2024GAME", "SSS2024PB"
+					],
+					"mentee" : [
+						"SSS2023ALG"
+					]
+
+				},
+				"socials" : {
+					"github" : "https://github.com/eunkyo3",
+					"ig" : "",
+					"lnkin" : ""
+				},
+				"records" : [
+					"2022 교내 프로그래밍 경진대회 장려상(4등)",
+					"2024 지방 기능 경기 대회 게임 개발 출전"
+				]
 			}
+      
 		]
 	}
 ]
